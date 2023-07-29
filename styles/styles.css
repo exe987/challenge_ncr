@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 2;
+  font-family: "Courier New", Courier, monospace;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/*ACCOUNTS LIST PAGE*/
+.lba {
+  text-align: center;
+}
+
+.list_bank_accounts {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+}
+
+.btn_ba {
+  width: 300px;
+  height: 100px;
+  border: none;
+  background-color: rgb(38, 207, 38);
+  color: #ffffff;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 10px;
+  text-decoration: none;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_ba:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 300px) {
+  .list_bank_accounts {
+    flex-basis: calc(100% / 3);
+  }
+}
+
+@media (max-width: 650px) {
+  .lba {
+    position: relative;
+    top: 100px;
+  }
+}
+
+/*ACCOUNT*/
+.balance_account {
+  max-height: 90vh;
+  height: auto;
+  padding: 40px;
+  text-align: center;
+}

@@ -1,0 +1,9 @@
+.header {
+  width: 100vw;
+  height: 100px;
+  background-color: rgb(38, 207, 38);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: left;
+}
