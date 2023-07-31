@@ -22,7 +22,7 @@ Testing: Esta rama se utiliza para pruebas, con configuraciones específicas par
 
 Instalación y ejecución
 
-1- Clona el repositorio desde https://github.com/exe987/ncr_ssfw.git.
+1- Clona el repositorio desde https://github.com/exe987/challenge_ncr.
 
 2- Navega hasta el directorio ncr_ssfw en tu terminal.
 
