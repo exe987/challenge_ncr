@@ -48,9 +48,9 @@ export default function Accounts() {
               {"<<"}
             </button>
           )}
-          {currentAccounts?.map((account) => (
+          {currentAccounts?.map((account, index) => (
             <BtnAccounts
-              key={account.n}
+              key={index}
               account_type={account.moneda}
               account_number={account.saldo}
               account_data={account}

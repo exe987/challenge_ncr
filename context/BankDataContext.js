@@ -13,7 +13,18 @@ export const BankDataContextProvider = ({ children }) => {
         throw new Error("No se pudo obtener los datos de la API");
       }
       const data = await response.json();
-      return data.cuentas;
+      const dataFiltered = data.cuentas.filter(
+        (data) => data.moneda === "$" || data.moneda === "u$s"
+      );
+      const dataMapped = dataFiltered.map((data) => {
+        return {
+          n: data.n,
+          saldo: data.saldo,
+          moneda: data.moneda,
+          tipo_letras: data.tipo_letras,
+        };
+      });
+      return dataMapped;
     } catch (error) {
       console.error("Error al obtener los datos de la API:", error);
     }

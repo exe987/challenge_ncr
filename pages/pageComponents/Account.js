@@ -20,13 +20,15 @@ export default function Account() {
 
   return (
     <Layout>
-      <h3>Consulta de Saldo</h3>
-      <h2>Este es tu saldo actual</h2>
-      <p>
-        Saldo de la cuenta: {accountData.moneda} {accountData.saldo}
-      </p>
-      <p>Tipo de cuenta: {getAccountType(accountData.tipo_letras)}</p>
-      <p>Numero de cuenta: {accountData.n}</p>
+      <div className="account_data">
+        <h3>Consulta de Saldo</h3>
+        <h2>Este es tu saldo actual</h2>
+        <p>
+          Saldo de la cuenta: {accountData.moneda} {accountData.saldo}
+        </p>
+        <p>Tipo de cuenta: {getAccountType(accountData.tipo_letras)}</p>
+        <p>Numero de cuenta: {accountData.n}</p>
+      </div>
       <BtnHome />
     </Layout>
   );
